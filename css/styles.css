@@ -489,11 +489,6 @@ img {
   fill: var(--third-background-color);
 }
 
-/* .soc-icon:hover,
-.soc-icon:focus {
-  fill: var(--third-background-color);
-} */
-
 /*    Clients    */
 
 .clients {
@@ -509,11 +504,6 @@ img {
   align-items: center;
   justify-content: space-between;
 }
-
-/* .clients-item:hover,
-.clients-item:focus {
-  color: var(--accent-color);
-} */
 
 .clients-link {
   width: 170px;
@@ -761,6 +751,14 @@ img {
   background-color: var(--third-background-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-close-btn:hover,
+.modal-close-btn:focus {
+  fill: var(--accent-color);
 }
 
 /*       MODAL FORM      */
@@ -897,6 +895,9 @@ img {
   margin-top: 30px;
   margin-left: auto;
   margin-right: auto;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-submit:hover,
